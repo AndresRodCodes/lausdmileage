@@ -15,6 +15,7 @@
         android:ems="3"
         android:inputType="numberDecimal"
         android:numeric="decimal"
+        android:textColor="@color/colorAccent"
         app:layout_constraintStart_toEndOf="@+id/oneWayTrip_EditText"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -52,6 +53,7 @@
         android:ems="10"
         android:hint="Street"
         android:inputType="text|textPostalAddress"
+        android:textColor="@color/colorAccent"
         app:layout_constraintStart_toEndOf="@+id/address_TextView"
         app:layout_constraintTop_toBottomOf="@+id/oneWayTrip_EditText" />
 
@@ -62,6 +64,7 @@
         android:ems="10"
         android:hint="City"
         android:inputType="textPostalAddress"
+        android:textColor="@color/colorAccent"
         app:layout_constraintStart_toStartOf="@+id/street_EditText"
         app:layout_constraintTop_toBottomOf="@+id/street_EditText" />
 
@@ -72,17 +75,17 @@
         android:ems="10"
         android:hint="Zip Code"
         android:inputType="number"
-        android:numeric="integer"
+        android:textColor="@color/colorAccent"
         app:layout_constraintStart_toStartOf="@+id/city_EditText"
         app:layout_constraintTop_toBottomOf="@+id/city_EditText" />
 
-    <Button
+    <android.support.design.button.MaterialButton
         android:id="@+id/button_Save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
-        android:background="@color/colorPrimaryDark"
+        android:backgroundTint="@color/colorPrimaryDark"
         android:onClick="save"
         android:text="Save"
         android:textColor="@color/colorAccent"

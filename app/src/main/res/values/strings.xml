@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">LAUSD Mileage</string>
     <string name="title_activity_maps">Map</string>
+    <string name="lau_hint_start_location">Start Location</string>
+    <string name="lau_hint_end_location">End Location</string>
+    <string name="lau_button_calculate">Calculate</string>
+    <string name="lau_button_clear">clear</string>
+    <string name="lau_textview_default">-</string>
 </resources>

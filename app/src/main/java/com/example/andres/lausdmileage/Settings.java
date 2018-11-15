@@ -3,6 +3,7 @@ package com.example.andres.lausdmileage;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.support.design.button.MaterialButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -23,7 +24,7 @@ public class Settings extends AppCompatActivity {
     EditText street_EditText;
     EditText city_EditText;
     EditText zipCode_EditText;
-    Button button_Save;
+    MaterialButton button_Save;
 
     public static final String SHARED_PREFS = "sharedPrefs";
     public static final String ONE_WAY_TRIP = "oneWayTrip";

@@ -5,6 +5,7 @@ import android.app.DownloadManager;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.AsyncTask;
+import android.support.design.button.MaterialButton;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -62,8 +63,7 @@ public class MainActivity extends AppCompatActivity {
     AutoCompleteTextView end_textView9;
     AutoCompleteTextView end_textView10;
 
-    Button getDistance;
-    Button button_clear;
+    MaterialButton button_clear;
 
     TextView textView_showRoadDistance;
     TextView textView_showRoadDistance2;
@@ -227,7 +227,7 @@ public class MainActivity extends AppCompatActivity {
         return roadDistance1;
     }
 
-    public void showDistance(View view) {
+    public void showDistance() {
 
         oneWayTripDouble = Double.parseDouble(oneWayTrip);
 
@@ -335,7 +335,7 @@ public class MainActivity extends AppCompatActivity {
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_dropdown_item_1line, SCHOOLNAMES);
 
-        getDistance = findViewById(R.id.btn_getDistance);
+        MaterialButton getDistance = findViewById(R.id.btn_getDistance);
         button_clear = findViewById(R.id.button_clear);
         textView_showRoadDistance = findViewById(R.id.textView_showRoadDistance);
         textView_showRoadDistance2 = findViewById(R.id.textView_showRoadDistance2);
@@ -406,6 +406,15 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
 
         }
+
+        getDistance.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                showDistance();
+
+            }
+        });
 
         start_textView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
