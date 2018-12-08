@@ -589,6 +589,9 @@ public class MainActivity extends AppCompatActivity {
                 String addressOfSchoolSelected = ADDRESSES.get(endTextViewAddressIndex);
 
                 Toast.makeText(MainActivity.this, addressOfSchoolSelected , Toast.LENGTH_SHORT).show();
+
+                startTextViewAddressIndex2 = endTextViewAddressIndex;
+                autoCompleteTextView.setText(end_textView.getText());
             }
         });
 
@@ -603,6 +606,9 @@ public class MainActivity extends AppCompatActivity {
                 String addressOfSchoolSelected = ADDRESSES.get(endTextViewAddressIndex2);
 
                 Toast.makeText(MainActivity.this, addressOfSchoolSelected , Toast.LENGTH_SHORT).show();
+
+                startTextViewAddressIndex3 = endTextViewAddressIndex2;
+                autoCompleteTextView2.setText(end_textView2.getText());
             }
         });
 
@@ -617,6 +623,9 @@ public class MainActivity extends AppCompatActivity {
                 String addressOfSchoolSelected = ADDRESSES.get(endTextViewAddressIndex3);
 
                 Toast.makeText(MainActivity.this, addressOfSchoolSelected , Toast.LENGTH_SHORT).show();
+
+                startTextViewAddressIndex4 = endTextViewAddressIndex3;
+                autoCompleteTextView3.setText(end_textView3.getText());
             }
         });
 
@@ -631,6 +640,9 @@ public class MainActivity extends AppCompatActivity {
                 String addressOfSchoolSelected = ADDRESSES.get(endTextViewAddressIndex4);
 
                 Toast.makeText(MainActivity.this, addressOfSchoolSelected , Toast.LENGTH_SHORT).show();
+
+                startTextViewAddressIndex5 = endTextViewAddressIndex4;
+                autoCompleteTextView4.setText(end_textView4.getText());
             }
         });
 
@@ -645,6 +657,9 @@ public class MainActivity extends AppCompatActivity {
                 String addressOfSchoolSelected = ADDRESSES.get(endTextViewAddressIndex5);
 
                 Toast.makeText(MainActivity.this, addressOfSchoolSelected , Toast.LENGTH_SHORT).show();
+
+                startTextViewAddressIndex6 = endTextViewAddressIndex5;
+                autoCompleteTextView5.setText(end_textView5.getText());
             }
         });
 
@@ -659,6 +674,9 @@ public class MainActivity extends AppCompatActivity {
                 String addressOfSchoolSelected = ADDRESSES.get(endTextViewAddressIndex6);
 
                 Toast.makeText(MainActivity.this, addressOfSchoolSelected , Toast.LENGTH_SHORT).show();
+
+                startTextViewAddressIndex7 = endTextViewAddressIndex6;
+                autoCompleteTextView6.setText(end_textView6.getText());
             }
         });
 
@@ -673,6 +691,9 @@ public class MainActivity extends AppCompatActivity {
                 String addressOfSchoolSelected = ADDRESSES.get(endTextViewAddressIndex7);
 
                 Toast.makeText(MainActivity.this, addressOfSchoolSelected , Toast.LENGTH_SHORT).show();
+
+                startTextViewAddressIndex8 = endTextViewAddressIndex7;
+                autoCompleteTextView7.setText(end_textView7.getText());
             }
         });
 
@@ -687,6 +708,9 @@ public class MainActivity extends AppCompatActivity {
                 String addressOfSchoolSelected = ADDRESSES.get(endTextViewAddressIndex8);
 
                 Toast.makeText(MainActivity.this, addressOfSchoolSelected , Toast.LENGTH_SHORT).show();
+
+                startTextViewAddressIndex9 = endTextViewAddressIndex8;
+                autoCompleteTextView8.setText(end_textView8.getText());
             }
         });
 
@@ -701,6 +725,9 @@ public class MainActivity extends AppCompatActivity {
                 String addressOfSchoolSelected = ADDRESSES.get(endTextViewAddressIndex9);
 
                 Toast.makeText(MainActivity.this, addressOfSchoolSelected , Toast.LENGTH_SHORT).show();
+
+                startTextViewAddressIndex10 = endTextViewAddressIndex9;
+                autoCompleteTextView9.setText(end_textView9.getText());
             }
         });
 

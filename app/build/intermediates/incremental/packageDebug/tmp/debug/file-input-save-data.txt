@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Fri Dec 07 17:51:12 PST 2018
+#Fri Dec 07 18:33:14 PST 2018
 1.base=C\:\\Users\\Andres\\AndroidStudioProjects\\lausdmileage\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 0.baseType=DIRECTORY
 1.baseType=DIRECTORY
