@@ -227,6 +227,15 @@ public class MainActivity extends AppCompatActivity {
         return roadDistance1;
     }
 
+    public void checkIfNull(TextView TextView) {
+
+        if (TextView.getText().toString().equals("null")) {
+
+            TextView.setText("-");
+
+        }
+    }
+
     public void showDistance() {
 
         oneWayTripDouble = Double.parseDouble(oneWayTrip);
@@ -263,6 +272,17 @@ public class MainActivity extends AppCompatActivity {
         textView_showRoadDistance8.setText(String.valueOf(roadDistance8));
         textView_showRoadDistance9.setText(String.valueOf(roadDistance9));
         textView_showRoadDistance10.setText(String.valueOf(roadDistance10));
+
+        checkIfNull(textView_showRoadDistance);
+        checkIfNull(textView_showRoadDistance2);
+        checkIfNull(textView_showRoadDistance3);
+        checkIfNull(textView_showRoadDistance4);
+        checkIfNull(textView_showRoadDistance5);
+        checkIfNull(textView_showRoadDistance6);
+        checkIfNull(textView_showRoadDistance7);
+        checkIfNull(textView_showRoadDistance8);
+        checkIfNull(textView_showRoadDistance9);
+        checkIfNull(textView_showRoadDistance10);
 
     }
 
