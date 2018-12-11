@@ -11,20 +11,23 @@
         android:id="@+id/oneWayTrip_EditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
         android:ems="3"
         android:inputType="numberDecimal"
         android:numeric="decimal"
         android:textColor="@color/colorAccent"
-        app:layout_constraintStart_toEndOf="@+id/oneWayTrip_EditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/oneWayTrip_TextView"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/oneWayTrip_EditText"
+        android:id="@+id/oneWayTrip_TextView"
         android:layout_width="117dp"
         android:layout_height="45dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
         android:gravity="left|center"
         android:text="One Way Trip:"
         android:textSize="18sp"
@@ -35,15 +38,16 @@
         android:id="@+id/address_TextView"
         android:layout_width="117dp"
         android:layout_height="45dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:gravity="left|center"
         android:text="Start/End:"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/oneWayTrip_EditText"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/oneWayTrip_EditText"
-        app:layout_constraintTop_toBottomOf="@+id/oneWayTrip_EditText" />
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oneWayTrip_TextView" />
 
     <EditText
         android:id="@+id/street_EditText"
