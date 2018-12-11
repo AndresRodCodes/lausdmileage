@@ -6,16 +6,6 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
-        <item name="android:textColorPrimary">@color/common_google_signin_btn_text_dark_focused</item>
-        <item name="android:textColorSecondary">@color/colorPrimaryDark</item>
-        <item name="android:colorForeground">@color/colorPrimaryDark</item>
-    </style>
-
-    <style name="TextAppearance.AppCompat.Widget.ActionBar.Title" parent="@android:style/TextAppearance">
-        <item name="android:textSize">23dp</item>
-        <item name="android:textColor">@color/colorAccent</item>
-
     </style>
 
 </resources>
