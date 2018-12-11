@@ -1,10 +1,8 @@
 package com.example.andres.lausdmileage;
 
 import android.Manifest;
-import android.app.DownloadManager;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.os.AsyncTask;
 import android.support.design.button.MaterialButton;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
@@ -15,11 +13,9 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.textclassifier.TextClassification;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
-import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -100,6 +96,7 @@ public class MainActivity extends AppCompatActivity {
 
     Double oneWayTripDouble = 0.0;
     String address = "";
+    String endAddress = "";
     String oneWayTrip;
 
     ArrayList<String> SCHOOLNAMES = new ArrayList<>();
@@ -209,7 +206,7 @@ public class MainActivity extends AppCompatActivity {
 
         String roadDistance1 = roadDistance;
 
-        if ((start_textView.getText().toString().equals("Home")) || (end_textView.getText().toString().equals("Home"))) {
+        if ((start_textView.getText().toString().equals("Start")) || (end_textView.getText().toString().equals("End"))) {
 
             String[] split = roadDistance.split(" ");
 
@@ -417,8 +414,12 @@ public class MainActivity extends AppCompatActivity {
         Log.i("settings", oneWayTrip);
         Log.i("settings", address);
 
-        SCHOOLNAMES.add("Home");
+        SCHOOLNAMES.add("Start");
         ADDRESSES.add(address);
+
+        SCHOOLNAMES.add("End");
+        endAddress = address;
+        ADDRESSES.add(endAddress);
 
         if (oneWayTripDouble == 0.0 && address.equals("")) {
 
@@ -590,8 +591,19 @@ public class MainActivity extends AppCompatActivity {
 
                 Toast.makeText(MainActivity.this, addressOfSchoolSelected , Toast.LENGTH_SHORT).show();
 
+                if (end_textView.getText().toString().equals("End")) {
+
+                    String start = "Start";
+                    autoCompleteTextView.setText(start);
+
+                } else {
+
+                    autoCompleteTextView.setText(end_textView.getText());
+
+                }
+
                 startTextViewAddressIndex2 = endTextViewAddressIndex;
-                autoCompleteTextView.setText(end_textView.getText());
+
             }
         });
 
@@ -607,8 +619,19 @@ public class MainActivity extends AppCompatActivity {
 
                 Toast.makeText(MainActivity.this, addressOfSchoolSelected , Toast.LENGTH_SHORT).show();
 
+                if (end_textView2.getText().toString().equals("End")) {
+
+                    String start = "Start";
+                    autoCompleteTextView2.setText(start);
+
+                } else {
+
+                    autoCompleteTextView2.setText(end_textView2.getText());
+
+                }
+
                 startTextViewAddressIndex3 = endTextViewAddressIndex2;
-                autoCompleteTextView2.setText(end_textView2.getText());
+
             }
         });
 
@@ -624,8 +647,19 @@ public class MainActivity extends AppCompatActivity {
 
                 Toast.makeText(MainActivity.this, addressOfSchoolSelected , Toast.LENGTH_SHORT).show();
 
+                if (end_textView3.getText().toString().equals("End")) {
+
+                    String start = "Start";
+                    autoCompleteTextView3.setText(start);
+
+                } else {
+
+                    autoCompleteTextView3.setText(end_textView3.getText());
+
+                }
+
                 startTextViewAddressIndex4 = endTextViewAddressIndex3;
-                autoCompleteTextView3.setText(end_textView3.getText());
+
             }
         });
 
@@ -641,8 +675,19 @@ public class MainActivity extends AppCompatActivity {
 
                 Toast.makeText(MainActivity.this, addressOfSchoolSelected , Toast.LENGTH_SHORT).show();
 
+                if (end_textView4.getText().toString().equals("End")) {
+
+                    String start = "Start";
+                    autoCompleteTextView4.setText(start);
+
+                } else {
+
+                    autoCompleteTextView4.setText(end_textView4.getText());
+
+                }
+
                 startTextViewAddressIndex5 = endTextViewAddressIndex4;
-                autoCompleteTextView4.setText(end_textView4.getText());
+
             }
         });
 
@@ -656,10 +701,20 @@ public class MainActivity extends AppCompatActivity {
 
                 String addressOfSchoolSelected = ADDRESSES.get(endTextViewAddressIndex5);
 
-                Toast.makeText(MainActivity.this, addressOfSchoolSelected , Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, addressOfSchoolSelected, Toast.LENGTH_SHORT).show();
+
+                if (end_textView5.getText().toString().equals("End")) {
+
+                    String start = "Start";
+                    autoCompleteTextView5.setText(start);
+
+                } else {
+
+                    autoCompleteTextView5.setText(end_textView5.getText());
+
+                }
 
                 startTextViewAddressIndex6 = endTextViewAddressIndex5;
-                autoCompleteTextView5.setText(end_textView5.getText());
             }
         });
 
@@ -675,8 +730,20 @@ public class MainActivity extends AppCompatActivity {
 
                 Toast.makeText(MainActivity.this, addressOfSchoolSelected , Toast.LENGTH_SHORT).show();
 
+                if (end_textView6.getText().toString().equals("End")) {
+
+                    String start = "Start";
+                    autoCompleteTextView6.setText(start);
+
+                } else {
+
+
+                    autoCompleteTextView6.setText(end_textView6.getText());
+
+                }
+
                 startTextViewAddressIndex7 = endTextViewAddressIndex6;
-                autoCompleteTextView6.setText(end_textView6.getText());
+
             }
         });
 
@@ -692,8 +759,19 @@ public class MainActivity extends AppCompatActivity {
 
                 Toast.makeText(MainActivity.this, addressOfSchoolSelected , Toast.LENGTH_SHORT).show();
 
+                if (end_textView7.getText().toString().equals("End")) {
+
+                    String start = "Start";
+                    autoCompleteTextView7.setText(start);
+
+                } else {
+
+                    autoCompleteTextView7.setText(end_textView7.getText());
+
+                }
+
                 startTextViewAddressIndex8 = endTextViewAddressIndex7;
-                autoCompleteTextView7.setText(end_textView7.getText());
+
             }
         });
 
@@ -709,8 +787,19 @@ public class MainActivity extends AppCompatActivity {
 
                 Toast.makeText(MainActivity.this, addressOfSchoolSelected , Toast.LENGTH_SHORT).show();
 
+                if (end_textView8.getText().toString().equals("End")) {
+
+                    String start = "Start";
+                    autoCompleteTextView8.setText(start);
+
+                } else {
+
+                    autoCompleteTextView8.setText(end_textView8.getText());
+
+                }
+
                 startTextViewAddressIndex9 = endTextViewAddressIndex8;
-                autoCompleteTextView8.setText(end_textView8.getText());
+
             }
         });
 
@@ -726,8 +815,19 @@ public class MainActivity extends AppCompatActivity {
 
                 Toast.makeText(MainActivity.this, addressOfSchoolSelected , Toast.LENGTH_SHORT).show();
 
+                if (end_textView9.getText().toString().equals("End")) {
+
+                    String start = "Start";
+                    autoCompleteTextView9.setText(start);
+
+                } else {
+
+                    autoCompleteTextView9.setText(end_textView9.getText());
+
+                }
+
                 startTextViewAddressIndex10 = endTextViewAddressIndex9;
-                autoCompleteTextView9.setText(end_textView9.getText());
+
             }
         });
 

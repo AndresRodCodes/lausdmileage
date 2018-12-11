@@ -38,7 +38,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:gravity="left|center"
-        android:text="Home:"
+        android:text="Start/End:"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/oneWayTrip_EditText"
         app:layout_constraintHorizontal_bias="0.0"
